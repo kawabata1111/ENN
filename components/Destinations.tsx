@@ -53,8 +53,8 @@ const Destinations: React.FC = () => {
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-7xl font-serif mb-2 md:mb-4">{item.name}</h3>
                 </div>
-                <Link to="/destinations" className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 flex-shrink-0">
-                   <span className="text-base md:text-lg">↗</span>
+                <Link to="/destinations" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 flex-shrink-0">
+                   <span className="text-lg">↗</span>
                 </Link>
               </div>
             </div>
