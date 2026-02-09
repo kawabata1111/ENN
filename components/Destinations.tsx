@@ -53,8 +53,11 @@ const Destinations: React.FC = () => {
                 <div>
                   <h3 className="text-3xl sm:text-4xl md:text-7xl font-serif mb-2 md:mb-4">{item.name}</h3>
                 </div>
-                <Link to="/destinations" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 flex-shrink-0">
-                   <span className="text-lg">↗</span>
+                <Link to="/destinations" className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 flex-shrink-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                     <line x1="7" y1="17" x2="17" y2="7"></line>
+                     <polyline points="7 7 17 7 17 17"></polyline>
+                   </svg>
                 </Link>
               </div>
             </div>
