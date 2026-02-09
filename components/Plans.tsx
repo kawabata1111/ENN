@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const planImages: Record<string, string> = {
   'plan-a': '/images/shibuya.jpg',
   'plan-b': '/images/ginza.jpg',
-  'plan-c': '/images/asakusa.jpg',
+  'plan-c': '/images/sushi.jpg',
   'plan-d': '/images/akihabara.jpg',
   'plan-f': '/images/ginza.jpg',
 };
