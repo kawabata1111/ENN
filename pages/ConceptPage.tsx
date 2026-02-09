@@ -37,7 +37,7 @@ const ConceptPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
              <div className="relative aspect-[3/4] overflow-hidden">
                 <img 
-                    src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=2070&auto=format&fit=crop" 
+                    src="/images/concept-guide.jpg" 
                     alt="Guide"
                     className="w-full h-full object-cover grayscale"
                 />

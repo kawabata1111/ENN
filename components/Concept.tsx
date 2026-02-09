@@ -21,7 +21,7 @@ const Concept: React.FC = () => {
                className="relative aspect-[3/4] overflow-hidden"
              >
                 <img 
-                  src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=2070&auto=format&fit=crop" 
+                  src="/images/concept-guide.jpg" 
                   alt="Guide silhouette" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out scale-110"
                 />

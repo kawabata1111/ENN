@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=2574&auto=format&fit=crop" 
+          src="/images/hero-tokyo.jpg" 
           alt="Tokyo Night" 
           className="w-full h-full object-cover opacity-60 scale-105"
         />
