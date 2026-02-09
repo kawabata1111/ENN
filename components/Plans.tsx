@@ -19,8 +19,8 @@ const Plans: React.FC = () => {
   return (
     <section id="plans" className="relative py-16 md:py-32 bg-enn-paper overflow-hidden">
       
-      {/* Background Image Changer */}
-      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+      {/* Background Image Changer - desktop only */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden hidden md:block">
         <AnimatePresence mode="wait">
           {activePlan && (
             <motion.img
