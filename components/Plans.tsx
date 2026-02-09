@@ -20,7 +20,7 @@ const Plans: React.FC = () => {
     <section id="plans" className="relative py-16 md:py-32 bg-enn-paper overflow-hidden">
       
       {/* Background Image Changer */}
-      <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 z-0 pointer-events-none overflow-hidden h-[50%] md:h-full md:inset-0 md:translate-y-0">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <AnimatePresence mode="wait">
           {activePlan && (
             <motion.img
@@ -30,7 +30,7 @@ const Plans: React.FC = () => {
               animate={{ opacity: 0.1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full h-full object-cover object-center grayscale md:!opacity-[0.15]"
+              className="w-full h-full object-cover object-center grayscale"
             />
           )}
         </AnimatePresence>
