@@ -17,7 +17,7 @@ const Plans: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="plans" className="relative py-32 bg-enn-paper overflow-hidden">
+    <section id="plans" className="relative py-16 md:py-32 bg-enn-paper overflow-hidden">
       
       {/* Background Image Changer */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -37,14 +37,14 @@ const Plans: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="mb-24 md:flex justify-between items-end">
+        <div className="mb-12 md:mb-24 md:flex justify-between items-end">
           <div>
-            <h2 className="text-xs font-bold tracking-widest-xl text-enn-gray uppercase mb-4">
+            <h2 className="text-[10px] md:text-xs font-bold tracking-widest-xl text-enn-gray uppercase mb-2 md:mb-4">
               {t.plans.label}
             </h2>
-            <h3 className="text-5xl md:text-7xl font-serif text-enn-black">{t.plans.title}</h3>
+            <h3 className="text-4xl md:text-5xl lg:text-7xl font-serif text-enn-black">{t.plans.title}</h3>
           </div>
-          <p className="mt-8 md:mt-0 text-sm font-light max-w-xs text-enn-black/60">
+          <p className="mt-4 md:mt-0 text-sm font-light max-w-xs text-enn-black/60">
             {t.plans.intro}
           </p>
         </div>
@@ -61,12 +61,12 @@ const Plans: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="group border-b border-enn-black py-16 flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer transition-colors duration-300 hover:bg-white/50 px-4 -mx-4"
+              className="group border-b border-enn-black py-8 md:py-16 flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer transition-colors duration-300 hover:bg-white/50 px-4 -mx-4"
             >
               
               <div className="md:w-1/3 mb-6 md:mb-0">
                 <span className="block text-[10px] font-bold tracking-widest text-enn-gray mb-2 group-hover:text-enn-black transition-colors">{plan.code}</span>
-                <h4 className="text-3xl md:text-5xl font-serif text-enn-black group-hover:translate-x-2 transition-transform duration-500">{item.name}</h4>
+                <h4 className="text-2xl sm:text-3xl md:text-5xl font-serif text-enn-black group-hover:translate-x-2 transition-transform duration-500">{item.name}</h4>
               </div>
               
               <div className="md:w-1/3 mb-8 md:mb-0">
@@ -97,7 +97,7 @@ const Plans: React.FC = () => {
         </div>
 
         {/* Common Information */}
-        <div className="mt-32 pt-16 border-t border-enn-black/5">
+        <div className="mt-16 md:mt-32 pt-8 md:pt-16 border-t border-enn-black/5">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
             <div className="md:col-span-3">
               <h4 className="text-xs font-bold tracking-widest text-enn-gray uppercase sticky top-32">
