@@ -5,25 +5,25 @@ export const DESTINATIONS: Destination[] = [
     id: 'shibuya',
     name: 'SHIBUYA',
     description: 'The heartbeat of modern youth culture. Neon chaos, hidden bars, and the rhythm of the crossing.',
-    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1988&auto=format&fit=crop'
+    image: '/images/shibuya.jpg'
   },
   {
     id: 'ginza',
     name: 'GINZA',
     description: 'Timeless elegance. Where minimalist architecture meets centuries of luxury tradition.',
-    image: 'https://images.unsplash.com/photo-1599923588289-46297349911e?q=80&w=2187&auto=format&fit=crop'
+    image: '/images/ginza.jpg'
   },
   {
     id: 'asakusa',
     name: 'ASAKUSA',
     description: 'The spiritual soul. Incense smoke, old wooden facades, and the silence behind the lantern.',
-    image: 'https://images.unsplash.com/photo-1528360983277-13d9b152c6d1?q=80&w=2070&auto=format&fit=crop'
+    image: '/images/asakusa.jpg'
   },
   {
     id: 'akihabara',
     name: 'AKIHABARA',
     description: 'Electric dreams. A cyber-punk reality of subculture, components, and neon innovation.',
-    image: 'https://images.unsplash.com/photo-1574516856570-34827038161f?q=80&w=2071&auto=format&fit=crop'
+    image: '/images/akihabara.jpg'
   }
 ];
 
@@ -47,10 +47,18 @@ export const PLANS: Plan[] = [
   {
     id: 'plan-c',
     code: 'PLAN C',
-    name: 'Omakase',
-    price: '$800',
+    name: 'Sushi Experience',
+    price: '$600',
     description: 'A culinary journey culminating in an exclusive sushi counter experience.',
-    features: ['5 Hours', 'Ginza Market', 'Sake Tasting', 'Michelin Sushi']
+    features: ['Sushi Making', 'Culture', 'Translation', 'Photo/Video']
+  },
+  {
+    id: 'plan-d',
+    code: 'PLAN D',
+    name: '1Day Plan',
+    price: 'Custom',
+    description: 'Full day customized experience from morning to night.',
+    features: ['12 Hours', 'Multi-Area', 'Fully Custom', 'All Inclusive Support']
   },
   {
     id: 'plan-f',

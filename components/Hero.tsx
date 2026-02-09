@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useLanguage } from './LanguageContext';
 
 const Hero: React.FC = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 1000], [0, 400]);
   const opacity = useTransform(scrollY, [0, 500], [1, 0]);
+  const { t } = useLanguage();
 
   return (
     <section className="relative h-[110vh] w-full overflow-hidden bg-enn-black">
@@ -45,7 +47,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.8, duration: 1, ease: "easeOut" }}
               className="text-xs md:text-sm font-sans font-light tracking-widest-xl uppercase text-white/80"
              >
-               Luxury Guides
+               {t.hero.subtitle1}
              </motion.p>
            </div>
            
@@ -58,7 +60,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 1.0, duration: 1, ease: "easeOut" }}
               className="text-xs md:text-sm font-sans font-light tracking-widest-xl uppercase text-white/80"
              >
-               Tokyo, Japan
+               {t.hero.subtitle2}
              </motion.p>
            </div>
         </div>
@@ -69,7 +71,7 @@ const Hero: React.FC = () => {
           transition={{ delay: 1.5, duration: 1.5 }}
           className="mt-12 text-white/60 font-serif italic text-lg md:text-xl max-w-lg text-center leading-relaxed"
         >
-          "Experience the city through the eyes of a friend."
+          {t.hero.quote}
         </motion.p>
       </div>
 
@@ -81,7 +83,7 @@ const Hero: React.FC = () => {
         transition={{ delay: 2, duration: 1 }}
       >
         <div className="flex flex-col items-center gap-2">
-            <span className="text-[10px] uppercase tracking-widest text-white/40">Scroll</span>
+            <span className="text-[10px] uppercase tracking-widest text-white/40">{t.hero.scroll}</span>
             <div className="w-[1px] h-16 bg-gradient-to-b from-white/50 to-transparent" />
         </div>
       </motion.div>

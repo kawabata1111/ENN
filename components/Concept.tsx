@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from './LanguageContext';
 
 const Concept: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="concept" className="py-40 md:py-64 bg-enn-paper relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
@@ -36,25 +39,25 @@ const Concept: React.FC = () => {
                viewport={{ once: true }}
                transition={{ duration: 0.8 }}
             >
-                <span className="block text-xs font-bold tracking-widest-xl uppercase text-enn-gray mb-8">The Philosophy</span>
+                <span className="block text-xs font-bold tracking-widest-xl uppercase text-enn-gray mb-8">{t.concept.label}</span>
                 
                 <h2 className="text-5xl md:text-7xl font-serif text-enn-black leading-[1.1] mb-12">
-                  Not a Tour Guide.<br />
-                  <span className="italic text-enn-black/60">A Local Friend.</span>
+                  {t.concept.title}<br />
+                  <span className="italic text-enn-black/60">{t.concept.subtitle}</span>
                 </h2>
 
                 <div className="space-y-8 text-enn-black/80 font-sans font-light leading-relaxed text-lg md:text-xl max-w-md">
                   <p>
-                    <span className="font-serif italic text-2xl mr-1">"Enn" (縁)</span> implies a mysterious fate that binds people together. We believe the true luxury of travel isn't in the destination, but in the connection.
+                    {t.concept.text1}
                   </p>
                   <p>
-                    Step away from the rehearsed scripts of historians. Walk the streets with Tokyo's creative youth—designers, artists, and architects who breathe the city's modern air.
+                    {t.concept.text2}
                   </p>
                 </div>
 
                 <div className="mt-16">
                    <a href="#plans" className="group inline-flex items-center gap-4 text-xs tracking-widest uppercase border-b border-enn-black pb-1 hover:text-enn-gray transition-colors">
-                      Discover The Collection
+                      {t.concept.cta}
                       <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
                    </a>
                 </div>
